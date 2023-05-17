@@ -1,0 +1,384 @@
+:root {
+  --main-color: #ed6041;
+  --secondary-color: #fbf8fd;
+  --background-color: #361f35;
+  --text-color: #fbf8fd;
+  --dark-mode: #1f1f1f;
+}
+
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* Fonts */
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--main-color);
+  font-family: "Noto Serif Display", serif;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: var(--main-color);
+  font-size: 3.052rem;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.953rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: var(--background-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* UI Elements */
+button {
+  display: inline-block;
+  height: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.dark_button {
+  background-color: var(--main-color);
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 3rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  text-align: left;
+  background-color: var(--secondary-color);
+  border-color: var(--text-color);
+  color: var(--background-color);
+}
+
+/* Menu */
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+nav a {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+nav a.logo {
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0px 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  padding: 5rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--background-color);
+}
+
+header p {
+  color: var(--secondary-color);
+}
+
+header button {
+  margin-bottom: 3rem;
+}
+
+.header_text {
+  width: 30vw;
+  min-width: 300px;
+}
+
+.header_graphics {
+  width: 25vw;
+  height: 25vw;
+  min-width: 250px;
+  min-height: 250px;
+  border-radius: 250px;
+  background-color: var(--main-color);
+  margin-bottom: 1rem;
+  padding: 3rem;
+}
+.header_graphics object {
+  width: 100%;
+  height: 100%;
+}
+
+.header_graphics object svg path {
+  fill: var(--main-color);
+}
+
+/* product section */
+#product {
+  padding: 5rem 3rem;
+  background-color: var(--main-color);
+}
+
+#product h2 {
+  font-size: 3.052rem;
+  line-height: 3.5rem;
+}
+
+#product article {
+  display: flex;
+  min-height: 50vh;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#product article:first-child {
+  min-height: 40vh;
+}
+
+.product_text {
+  width: 50vw;
+  min-width: 300px;
+}
+
+#product article:first-child .product_text {
+  width: 75vw;
+  min-width: 300px;
+}
+
+.product_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  padding: 1rem;
+  margin: 3rem;
+  background-color: var(--secondary-color);
+  border-radius: 300px;
+}
+.product_graphics object {
+  width: 100%;
+  height: 100%;
+}
+
+/* highlight sections */
+.highlight {
+  display: flex;
+  min-height: 70vh;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.highlight div {
+  width: 80vw;
+}
+
+.highlight div h2 {
+  font-size: 5.005rem;
+  line-height: 6rem;
+}
+
+.dark {
+  background-color: var(--background-color);
+}
+
+.dark h2 {
+  color: var(--secondary-color);
+}
+
+.dark a {
+  color: var(--secondary-color);
+}
+
+/* request section */
+#request {
+  display: flex;
+  min-height: 50vh;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--secondary-color);
+}
+
+#request div {
+  width: 50vw;
+  min-width: 300px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 5vh 2rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+footer h2,
+footer h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: var(--text-color);
+}
+
+footer section.left {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
+}
+
+/* Dark mode */
+
+.dark-mode body {
+  background-color: var(--dark-mode);
+  color: var(--background-color);
+}
+
+.dark-mode nav {
+  background-color: var(--dark-mode);
+}
+
+.dark-mode a {
+  color: var(--main-color);
+}
+
+.dark-mode header {
+  background-color: var(--dark-mode);
+}
+
+.dark-mode .highlight {
+  background-color: var(--background-color);
+}
+
+.dark-mode #product {
+  background-color: var(--dark-mode);
+  color: var(--main-color);
+}
+
+.dark-mode article {
+  background-color: var(--dark-mode);
+  color: var(--main-color);
+}
+
+.dark-mode article p {
+  color: var(--main-color);
+}
+
+.dark-mode #request {
+  background-color: var(--background-color);
+}
+
+.dark-mode footer {
+  background-color: var(--dark-mode);
+}
+
+.toggle-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+#darkModeButton {
+  background-color: var(--dark-mode);
+  color: var(--main-color);
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+#darkModeButton .dark-mode-on {
+  transition: transform 0.5s ease;
+  transform: translateY(-100%);
+}
+
+body.dark-mode #darkModeButton {
+  background-color: #444;
+  color: #f5f5f5;
+}
+
+body.dark-mode #darkModeButton .dark-mode-on {
+  transform: translateY(-100%);
+}
+
+body.dark-mode #darkModeButton .dark-mode-off {
+  transform: translateY(-200%);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 0.9em;
+  }
+
+  #product h2 {
+    font-size: 1.953rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+  .highlight div h2 {
+    font-size: 3.052rem;
+    line-height: 3.5rem;
+  }
+}
